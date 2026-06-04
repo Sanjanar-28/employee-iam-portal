@@ -1,0 +1,51 @@
+.dashboard-layout {
+
+  display: flex;
+
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0f172a,
+      #1e293b
+    );
+}
+
+.dashboard-content {
+
+  flex: 1;
+}
+
+.dashboard-body {
+
+  padding: 30px;
+}
+.welcome-card {
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 20px;
+
+  padding: 40px;
+
+  color: white;
+
+  max-width: 700px;
+}
+
+.welcome-card h2 {
+
+  margin-bottom: 15px;
+}
+
+.welcome-card p {
+
+  color: #94a3b8;
+
+  margin-bottom: 10px;
+
+  line-height: 1.7;
+}

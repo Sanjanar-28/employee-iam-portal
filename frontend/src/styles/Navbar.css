@@ -1,0 +1,61 @@
+.navbar {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 20px 30px;
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.08);
+}
+
+.navbar h3 {
+
+  color: white;
+
+  margin: 0;
+}
+
+.navbar-user {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.role-badge {
+
+  background:
+    linear-gradient(
+      90deg,
+      #3b82f6,
+      #8b5cf6
+    );
+
+  color: white;
+
+  padding: 6px 14px;
+
+  border-radius: 20px;
+
+  font-size: 0.85rem;
+}
+
+.user-info {
+
+  display: flex;
+
+  flex-direction: column;
+
+  color: white;
+}
+
+.user-info small {
+
+  color: #94a3b8;
+}

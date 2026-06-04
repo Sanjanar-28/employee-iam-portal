@@ -1,0 +1,71 @@
+.audit-header h1 {
+
+  color: white;
+
+  margin-bottom: 10px;
+}
+
+.audit-header p {
+
+  color: #94a3b8;
+
+  margin-bottom: 25px;
+}
+
+.audit-card {
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  overflow-x: auto;
+}
+
+.audit-card table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.audit-card th {
+
+  text-align: left;
+
+  color: white;
+
+  padding: 15px;
+
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.audit-card td {
+
+  padding: 15px;
+
+  color: #e2e8f0;
+
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.action-badge {
+
+  background: rgba(
+    59,
+    130,
+    246,
+    0.2
+  );
+
+  color: #60a5fa;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 0.85rem;
+}
