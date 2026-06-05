@@ -2,22 +2,17 @@ const User = require("../models/User");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const AuditLog = require("../models/AuditLog");
-
 const registerUser = async (req, res) => {
   try {
 
     const { name, email, password, role, department } = req.body;
-
     const existingUser = await User.findOne({ email });
-
     if (existingUser) {
       return res.status(400).json({
         message: "User already exists"
       });
     }
-
     const hashedPassword = await bcrypt.hash(password, 10);
-
     const user = await User.create({
       name,
       email,
@@ -26,28 +21,20 @@ const registerUser = async (req, res) => {
       department
     });
     await AuditLog.create({
-
      action: "CREATE_USER",
-
         performedBy:
         req.user?.name || "System",
-
         targetUser:
         user.name
-
     });
-
     res.status(201).json({
       message: "User Registered Successfully",
       user
     });
-
   } catch (error) {
-
     res.status(500).json({
       message: error.message
     });
-
   }
 };
 const loginUser = async (req, res) => {

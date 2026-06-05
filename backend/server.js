@@ -5,7 +5,7 @@ const userRoutes = require("./routes/userRoutes");
 const cors = require("cors");
 
 dotenv.config();
-console.log(process.env.MONGO_URI);
+
 
 connectDB();
 

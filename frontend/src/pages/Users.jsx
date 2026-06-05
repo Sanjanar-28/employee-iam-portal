@@ -645,8 +645,7 @@ const updateUser = async () => {
   </div>
 
           
-)}
-{showEditModal && editingUser && (
+)}{showEditModal && editingUser && (
 
   <div className="modal-overlay">
 
@@ -741,6 +740,7 @@ const updateUser = async () => {
   </div>
 
 )}
+
         </div>
       </div>
     </div>
