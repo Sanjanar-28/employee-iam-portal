@@ -49,3 +49,42 @@
 
   line-height: 1.7;
 }
+.welcome-card {
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 4px 12px
+    rgba(0, 0, 0, 0.08);
+
+  max-width: 600px;
+
+}
+
+.welcome-card h2 {
+
+  margin-bottom: 15px;
+
+  color: #1e293b;
+
+}
+
+.welcome-card p {
+
+  margin-bottom: 12px;
+
+  color: #475569;
+
+  font-size: 1rem;
+
+}
+
+.welcome-card strong {
+
+  color: #2563eb;
+
+}

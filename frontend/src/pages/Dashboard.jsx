@@ -28,24 +28,28 @@ function Dashboard() {
 
           ) : (
 
-            <div className="welcome-card">
+           <div className="welcome-card">
 
-              <h2>
-                Welcome, {user?.name}
-              </h2>
+  <h2>
+    Welcome, {user?.name}
+  </h2>
 
-              <p>
-                You are logged in as
-                <strong> {user?.role}</strong>.
-              </p>
+  <p>
+    Role:
+    <strong> {user?.role}</strong>
+  </p>
 
-              <p>
-                Use the navigation menu to
-                manage users and access
-                available features.
-              </p>
+  <p>
+    Department:
+    <strong> {user?.department}</strong>
+  </p>
 
-            </div>
+  <p>
+    Access Level:
+    <strong> Restricted User</strong>
+  </p>
+
+</div>
 
           )}
 
