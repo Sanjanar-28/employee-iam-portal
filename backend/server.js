@@ -15,7 +15,7 @@ app.use(express.json());
 app.use("/api/users", userRoutes);
 
 app.get("/", (req, res) => {
-    res.send("Employee IAM Portal API Running");
+    res.send("Employee IAM Portal API Running- CI/CD Test");
 });
 
 const PORT = process.env.PORT || 5000;
